@@ -1,0 +1,80 @@
+:root{
+  --bg: #f9fafb;
+  --card: #ffffff;
+  --text: #0f1724;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --danger: #ef4444;
+  --surface: #f3f4f6;
+}
+
+/* dark theme variables */
+[data-theme="dark"]{
+  --bg: #0f1724;
+  --card: #0b1220;
+  --text: #e6eef8;
+  --muted: #9aa7b6;
+  --accent: #2563eb;
+  --danger: #ff6b6b;
+  --surface: rgba(255,255,255,0.02);
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  margin:0;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+  min-height:100vh;
+  color:var(--text);
+}
+
+.app{
+  width:100%;
+  max-width:900px;
+  background:var(--card);
+  border-radius:12px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  padding:20px;
+}
+
+/* header */
+.header-row{display:flex;justify-content:space-between;align-items:center}
+.subtitle{margin:6px 0 0;color:var(--muted);font-size:0.9rem}
+.header-controls{display:flex;gap:8px}
+.theme-toggle{background:transparent;border:1px solid var(--surface);color:var(--text);padding:8px 10px;border-radius:8px;cursor:pointer}
+
+/* form */
+.form{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.form input,.form select{flex:1;min-width:120px;padding:8px;border-radius:8px;border:1px solid var(--surface);background:transparent;color:var(--text)}
+.form button{background:var(--accent);color:white;border:none;padding:8px 12px;border-radius:8px;cursor:pointer}
+
+/* filter */
+.filter{margin:16px 0;display:flex;gap:8px;align-items:center;color:var(--muted)}
+
+/* summary */
+.summary{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.card{flex:1;text-align:center;padding:10px;border-radius:8px;background:var(--surface);color:var(--text)}
+.card.income{border-left:4px solid #16a34a}
+.card.expense{border-left:4px solid #dc2626}
+.card.balance{border-left:4px solid var(--accent)}
+
+/* list */
+.list{list-style:none;padding:0}
+.list li{display:flex;justify-content:space-between;padding:10px;margin-top:8px;border-radius:8px;background:var(--surface)}
+.list li.income{border-left:5px solid rgba(22,163,74,0.6)}
+.list li.expense{border-left:5px solid rgba(220,38,38,0.6)}
+.list .right{display:flex;align-items:center;gap:8px}
+.list button{border:none;background:transparent;cursor:pointer;color:var(--danger)}
+
+/* chart */
+.chart{margin-top:20px}
+.empty{text-align:center;color:var(--muted);margin-top:20px}
+
+/* responsive */
+@media (max-width:640px){
+  .header-row{flex-direction:column;align-items:flex-start}
+  .summary{flex-direction:column}
+}
