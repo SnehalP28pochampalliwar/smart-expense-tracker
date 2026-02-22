@@ -1,4 +1,4 @@
-# Smart Expense Tracker 💰
+# Smart Expense Tracker 
 
 A simple, responsive expense tracker built with React & Vite.
 
@@ -22,4 +22,4 @@ Dark: `screenshot_dark.png`
 **About**
 Hi, I’m **Snehal Pochampalliwar**, a fresher frontend developer who loves building creative web apps.
 
-❤️ Built with love by Snehal Pochampalliwar
+Built with love by Snehal Pochampalliwar
