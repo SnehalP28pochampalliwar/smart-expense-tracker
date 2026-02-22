@@ -17,7 +17,7 @@ Light: `screenshot_light.png`
 Dark: `screenshot_dark.png`
 
 **Live Demo**
-🔗 [Live Demo](https://your-netlify-link.netlify.app)
+🔗 [Live Demo](https://glittering-monstera-417123.netlify.app/)
 
 **About**
 Hi, I’m **Snehal Pochampalliwar**, a fresher frontend developer who loves building creative web apps.
